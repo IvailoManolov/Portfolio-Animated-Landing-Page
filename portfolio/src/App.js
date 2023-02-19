@@ -3,7 +3,11 @@ import './App.css';
 import personPhoto from "./images/result.png"
 import splashScreen from "./images/splash.png"
 
+import {Typewriter} from 'react-simple-typewriter'
+
+
 function App() {
+
   return (
     <div className="container">
       <nav>
@@ -21,7 +25,20 @@ function App() {
       <div className='wrapper'>
         <div className='cols cols0'>
           <span className='topline'>Hello</span>
-          <h1>I'm <span className='multiText'> Coder</span></h1>
+          <h1> I'm a {' '}
+            <span className='multiText'> 
+            <Typewriter 
+            loop
+            cursor
+            cursorStyle='|'
+            typeSpeed={120}
+            deleteSpeed={90}
+            delaySpeed={1200}
+            words={['Developer','Engineer','Freelancer']}
+            />
+            </span>
+          </h1>
+
           <p>Lorem ipsum dolor sit amet, consecttetur adipising elit.</p>
           <div className='btns'>
           <button> Download CV </button>
